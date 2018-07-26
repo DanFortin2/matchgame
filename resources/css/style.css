@@ -23,3 +23,41 @@
   src: local('Work Sans Black'), local('WorkSans-Black'), url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh3_4f8mNhN.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(255, 242, 242);
+  color: rgb(74, 74, 74);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(32, 64, 86);
+}
+
+p {
+  font-size: 1rem:
+}
+
+.container {
+  margin-top: 5.25rem;
+}
+
+/* cards section*/
+
+.card {
+  height: 12.5rem;
+  border: 4px solid #ffffff;
+  background-color: rgb(32, 64, 86);
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 1.07142rem;
+}

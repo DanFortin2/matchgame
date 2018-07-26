@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <link rel="icon" href="./favicon.png" type="image/x-icon">
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   <title>Match Game</title>
 </head>
 <body>
+
+  <div class="container">
+    <!--Game Instructions-->
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        <h1>Match Game</h1>
+        <br>
+        <p><strong>Rules</strong></p>
+        <p>Click on a card to reveal the number on the other side. Click on a second card to try and find
+        a match to the first. If you succeed, the pair will be removed from play. If not, try again!</p>
+        <br>
+        <p><strong>How To Win</strong></p>
+        <p>You win when all pairs have been found.</p>
+      </div>
+
+    <!--Actual Game-->
+      <div id="game" class="col-xs-12 col-md-9">
+        <div class="row">
+          <div class="col-md-3">Cards Row1</div>
+          <div class="col-md-3">Cards Row2</div>
+          <div class="col-md-3">Cards Row3</div>
+          <div class="col-md-3">Cards Row4</div>
+          <div class="col-md-3">Cards Row5</div>
+          <div class="col-md-3">Cards Row6</div>
+          <div class="col-md-3">Cards Row7</div>
+          <div class="col-md-3">Cards Row8</div>
+          <div class="col-md-3">Cards Row9</div>
+          <div class="col-md-3">Cards Row10</div>
+          <div class="col-md-3">Cards Row11</div>
+          <div class="col-md-3">Cards Row12</div>
+          <div class="col-md-3">Cards Row13</div>
+          <div class="col-md-3">Cards Row14</div>
+          <div class="col-md-3">Cards Row15</div>
+          <div class="col-md-3">Cards Row16</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="

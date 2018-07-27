@@ -10,22 +10,32 @@ var MatchGame = {};
  */
 
 MatchGame.generateCardValues = function () {
-  var sequentialValues = [];
 
-  for (var value = 1; value <= 8; value++) {
-    sequentialValues.push(value);
-    sequentialValues.push(value);
+  //create variable for empty array
+  var cardArray = [];
+
+  //write a loop that goes through 1-8
+  for (var cardNumber = 1; cardNumber <= 8; cardNumber++) {
+    //push the values from 1-8 into the array twice. Just repeat
+    cardArray.push(cardNumber);
+    cardArray.push(cardNumber);
   }
 
-  var cardValues = [];
+  //create new array to house the values in
+  var cardNumbers=[];
 
-  while (sequentialValues.length > 0) {
-    var randomIndex = Math.floor(Math.random() * sequentialValues.length);
-    var randomValue = sequentialValues.splice(randomIndex, 1)[0];
-    cardValues.push(randomValue);
+  //Run the loop until the sequentially-ordered array is empty
+  while (cardArray.length > 0) {
+    //generates random index of the array and matches length of pervious array
+    //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    var randomIndex = Math.floor(Math.random() * cardArray.length);
+    //uses splice to remove element at random index https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+    var randomValue = cardArray.splice(randomIndex, 1)[0];
+    //return the randomized array back to the new card array
+    cardNumbers.push(randomValue);
   }
-
-  return cardValues;
+  //display new array
+  return cardNumbers;
 };
 
 /*

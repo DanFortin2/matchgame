@@ -117,17 +117,24 @@ MatchGame.flipCard = function($card, $game) {
   var flippedCards = $game.data('flippedCards');
   flippedCards.push($card);
 
+//If two card are flipped at the same time
   if (flippedCards.length === 2) {
+    //If first flipped card is an exact match to the second card
     if (flippedCards[0].data('value') === flippedCards[1].data('value')) {
+      //setting a match variable with color
       var matchCss = {
         backgroundColor: 'rgb(153, 153, 153)',
         color: 'rgb(204, 204, 204)'
       };
+      //when both flipped cards match then set them both to the above css styling
       flippedCards[0].css(matchCss);
       flippedCards[1].css(matchCss);
+      //if not matched then follow code below
     } else {
+      //when cards don't match it resets back to the default styling
       var card1 = flippedCards[0];
       var card2 = flippedCards[1];
+      //flips card back to false and they flip back over in 350 ms
       window.setTimeout(function() {
         card1.css('background-color', 'rgb(32, 64, 86)')
             .text('')
